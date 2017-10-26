@@ -15,7 +15,9 @@ logo.onload=function(){
    context.beginPath();
    context.arc(200,200,100, 0 , 2 * Math.PI);
    context.closePath();
-   var gradient= context.createRadialGradient();
+   var gradient= context.createRadialGradient(200,200,50,200,200,20);
+   gradient.addColorStop(0,"#0A0A0A");
+   gradient.addColorStop(1,"#636766");
    context.fillStyle="#636766";
    context.fill();
 }
